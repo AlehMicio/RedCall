@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130sp"
+        android:text="00:00"
+        android:textSize="35sp"/>
+
+    <ImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeTextView"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/circle"/>
+
+    <ImageView
+        android:id="@+id/startImageView"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/circleImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_mic"
+        android:alpha="1"
+        android:onClick="recordButton"/>
+
+    <ImageView
+        android:id="@+id/stopImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/circleImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/square"
+        android:alpha="0"/>
+
+    <!--Начало линии-->
+    <View
+        android:id="@+id/blackLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@color/black" />
+
+    <ImageView
+        android:id="@+id/iconMicImageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/blackLine"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_mic"
+        app:tint="@color/teal_200" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iconMicImageView"
+        android:layout_marginLeft="100dp"
+        android:text="Запись"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/iconSpisokImageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/blackLine"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_spisok"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iconSpisokImageView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:text="Список"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

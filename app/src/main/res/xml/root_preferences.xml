@@ -1,0 +1,9 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:title="Запись звонков"
+        app:key="buttonOnOff"
+        app:summaryOff="Отключена"
+        app:summaryOn="Включена"/>
+
+</PreferenceScreen>
