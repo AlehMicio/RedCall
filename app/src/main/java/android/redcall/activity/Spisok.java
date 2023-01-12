@@ -149,7 +149,7 @@ public class Spisok extends AppCompatActivity {
                 return false;
             }
 
-            @Override //Удаление
+            @Override //Удалениe
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
                 new AlertDialog.Builder(Spisok.this).setTitle("Удалить запись?")
                         .setNegativeButton("Да", new DialogInterface.OnClickListener() {
